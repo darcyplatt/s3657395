@@ -1,0 +1,80 @@
+
+<html>
+  <head> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+  </head>
+  <head>
+    <title>Icon Template Percentage</title>
+     <style>
+        .row{
+            margin-top:40px;
+        }
+        .left-column{
+            float:left;
+            width:30%;
+            margin-left:30px;
+        }
+        .center-column{
+            width:30%;
+            margin:auto;
+        }
+        .right-column{
+            float:right;
+            width:30%;
+            margin:auto;
+        }
+        .image-container{
+            display: table-cell;
+            vertical-align: middle;
+            margin: auto;
+        }
+     </style>
+
+     <title>s3657395</title>
+
+     <body style="background-color:rgb(159, 180, 199);"
+
+         <br> 
+
+         
+         <img id="system2" src="img/systemicon2.svg" width="175" height="175"/>
+         <br><br>
+         <img id="system3" src="img/systemicon3.svg" width="175" height="175"/>
+         <img id="system4" src="img/systemicon4.svg" width="175" height="175"/>
+
+
+
+            <div class="row">>
+                <div class="left-column"><div class="image-container"><img id="system1" src="img/systemicon1.svg" width="175" height="175"/></div></div>
+                <div class="right-column"><div class="image-container"><img id="system2" src="img/systemicon1.svg" width="175" height="175"/></div></div>
+                <div class="center-column"><div class="image-container"><img id="system1" src="img/systemicon2.svg" width="175" height="175"/></div></div>
+            </div>
+    
+            <div class="row">
+                <div class="left-column"><div class="image-container"><img src="img/hex.png" height="200" width="200"/></div></div>
+                <div class="right-column"><div class="image-container"><img src="img/rec.png" height="200" width="200"/></div></div>
+                <div class="center-column"><div class="image-container"><img src="img/sta.png" height="200" width="200"/></div></div>
+            </div>
+    
+            <div class="row">
+                <div class="left-column"><div class="image-container"><img src="img/trr.png" height="200" width="200"/></div></div>
+                <div class="right-column"><div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div></div>
+                <div class="center-column"><div class="image-container"><img src="img/her.png" height="200" width="200"/></div></div>
+            </div>
+    
+        </body>
+        
+
+     <script> 
+            var sound1 = new buzz.sound("sound/dryer1.mp3");
+            var sound2 = new buzz.sound("sound/dryer3.mp3");
+
+            window.onload = function() {
+                document.getElementById("system1").addEventListener('click', function () {sound1.play(); });  
+                document.getElementById("system2").addEventListener('click', function () {sound2.play(); });
+                document.getElementById("system3").addEventListener('click', function () {sound1.play(); });
+                document.getElementById("system4").addEventListener('click', function () {sound2.play(); });
+            }
+     </script>
+
+</html>
