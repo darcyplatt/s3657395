@@ -1,0 +1,54 @@
+
+<html>
+  <head> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+  <style>
+  .row{
+    width:720px;
+    margin: 10px auto 10px auto ;
+    }
+  .image-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding:20px;
+    }
+  </style>
+  </head>
+     <title>s3657395</title>
+
+     <body style="background-color:rgb(255, 255, 255);"
+
+
+            <div class="row">
+               <div class="image-container"><img id="shapesystem1" src="img/shapesystem1.png" width="175" height="175"/></div>
+               <div class="image-container"><img id="shapesystem3" src="img/shapesystem3.png" width="175" height="175"/></div>
+               <div class="image-container"><img id="shapesystem2" src="img/shapesystem2.png" width="175" height="175"/></div>
+            </div>
+            <div class="row">
+                <div class="image-container"><img id="shapesystem4" src="img/shapesystem4.png" width="175" height="175"/></div>
+                <div class="image-container"><img id="shapesystem6" src="img/shapesystem6.png" width="175" height="175"/></div>
+                <div class="image-container"><img id="shapesystem5" src="img/shapesystem5.png" width="175" height="175"/></div>
+            </div>
+    
+            <div class="row">
+                <div class="image-container"><img id="shapesystem7" src="img/shapesystem7.png" width="175" height="175"/></div>
+                <div class="image-container"><img id="shapesystem9" src="img/shapesystem9.png" width="175" height="175"/></div>
+                <div class="image-container"><img id="shapesystem8" src="img/shapesystem8.png" width="175" height="175"/></div>
+            </div>
+    
+        </body>
+        
+
+     <script> 
+            var sound1 = new buzz.sound("sound/dryer1.mp3");
+            var sound2 = new buzz.sound("sound/dryer3.mp3");
+
+            window.onload = function() {
+                document.getElementById("system1").addEventListener('click', function () {sound1.play(); });  
+                document.getElementById("system2").addEventListener('click', function () {sound2.play(); });
+                document.getElementById("system3").addEventListener('click', function () {sound1.play(); });
+                document.getElementById("system4").addEventListener('click', function () {sound2.play(); });
+            }
+     </script>
+
+</html>
